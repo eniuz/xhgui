@@ -49,7 +49,7 @@ $(document).ready(function () {
         height: 300,
         xAxis: 'date',
         title: 'Time usage',
-        legend: ['Wall time', 'CPU time'],
+        legend: ['95th percentile wall time', '95th percentile CPU time'],
         postfix: ' \u00b5s',
     });
     Xhgui.linegraph('#memory-line-graph', graphData, {
@@ -57,7 +57,7 @@ $(document).ready(function () {
         height: 300,
         xAxis: 'date',
         title: 'Memory usage',
-        legend: ['Memory usage', 'Peak memory usage'],
+        legend: ['95th percentile memory usage', '95th percentile peak memory usage'],
         postfix: ' bytes'
     });
 });
